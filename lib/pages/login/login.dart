@@ -17,9 +17,15 @@ class Login extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          SizedBox(height: 30),
+          Wrap(
+            crossAxisAlignment: WrapCrossAlignment.start,
+            children: [IconButton(icon: new Icon(Icons.arrow_back_ios_sharp, size: 30, color: Colors.black,), onPressed: null)],
+          ),
+
           //HEADER TITLE
           Container(
-            padding: EdgeInsets.fromLTRB(16, 80, 16, 60),
+            padding: EdgeInsets.fromLTRB(16, 30, 16, 60),
             child: Text("Login", style: Theme.of(context).textTheme.headline1),
           ),
           // INPUT FORM FIELD Email

@@ -12,7 +12,7 @@ class Index extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ForgotPassword(),
+      home: SignUp(),
       theme: ThemeData(
         textTheme: TextTheme(
           headline1: HeaderTextStyle,

@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:ui_client_mobile/pages/components/button.dart';
 import 'package:ui_client_mobile/pages/components/login-social-account.dart';
 import 'package:ui_client_mobile/pages/components/text-input.dart';
+import 'package:ui_client_mobile/pages/login/login.dart';
 
 class SignUp extends StatelessWidget {
   final String font = "Metropolis";
@@ -13,13 +14,23 @@ class SignUp extends StatelessWidget {
       statusBarColor: Color.fromRGBO(249, 249, 249, 1),
       statusBarIconBrightness: Brightness.dark,
     ));
+
+    void _signup(){
+      Navigator.push(context,  MaterialPageRoute(builder: (context) => Login()),);
+    }
+
     return new Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          SizedBox(height: 30),
+          Wrap(
+            crossAxisAlignment: WrapCrossAlignment.start,
+            children: [IconButton(icon: new Icon(Icons.arrow_back_ios_sharp, size: 30, color: Colors.black,), onPressed: _signup)],
+          ),
           //HEADER TITLE
           Container(
-            padding: EdgeInsets.fromLTRB(16, 80, 16, 60),
+            padding:EdgeInsets.fromLTRB(16, 30, 16, 60),
             child: Text("Sign Up", style: Theme.of(context).textTheme.headline1),
             ),
           // INPUT FORM FIELD Name
@@ -74,6 +85,9 @@ class SignUp extends StatelessWidget {
           ButtonIconWidget(),
         ],
       ),
+
     );
+
   }
+
 }
