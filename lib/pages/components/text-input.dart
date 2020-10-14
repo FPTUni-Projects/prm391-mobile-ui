@@ -12,6 +12,7 @@ class TextInputField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         decoration: BoxDecoration(
+          //DECORATE WRAPPER FOR TEXT INPUT
           color: Colors.white,
           borderRadius:  BorderRadius.circular(4),
           boxShadow: [BoxShadow(
@@ -22,20 +23,13 @@ class TextInputField extends StatelessWidget {
           )],
         ),
         child: TextFormField(
-          style: TextStyle(
-            color: Color.fromRGBO(45,45,45,1),
-            fontSize: 18.0,
-            height: 1.4,
-            fontFamily:font,
-
-            fontWeight: FontWeight.w600,
-          ),
+          style: Theme.of(context).textTheme.subtitle1,
+          // DECORATE INPUT
           decoration: InputDecoration(
             labelText: this.title,
-            contentPadding:   EdgeInsets.fromLTRB(18.0, 22.0, 18.0, 22.0),
+            contentPadding:   EdgeInsets.fromLTRB(12.0, 15.0, 12.0, 15.0),
             border: InputBorder.none,
             ),
-
           ),
         );
       }
