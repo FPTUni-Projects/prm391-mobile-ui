@@ -50,3 +50,26 @@ const ErrorTextStyle = TextStyle(
   color:Color.fromRGBO(240,31,14,1),
   height: 1.4,
 );
+
+// For text inside text form field
+const titleCard = TextStyle(
+  fontFamily: FontNameDefault,
+  fontWeight: FontWeight.w700,
+  fontSize: SmallTextSize,
+  color:Color.fromRGBO(34,34,34,1),
+  height: 1.4,
+);
+const smallTitleCard = TextStyle(
+  fontFamily: FontNameDefault,
+  fontWeight: FontWeight.w500,
+  fontSize: SmallTextSize,
+  color:Color.fromRGBO(34,34,34,1),
+  height: 1.4,
+);
+const titleHeader = TextStyle(
+  fontFamily: FontNameDefault,
+  fontWeight: FontWeight.w700,
+  fontSize: 34,
+  color:Color.fromRGBO(34,34,34,1),
+  height: 1.4,
+);
