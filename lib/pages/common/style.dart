@@ -55,7 +55,7 @@ const ErrorTextStyle = TextStyle(
 const titleCard = TextStyle(
   fontFamily: FontNameDefault,
   fontWeight: FontWeight.w700,
-  fontSize: SmallTextSize,
+  fontSize: 14,
   color:Color.fromRGBO(34,34,34,1),
   height: 1.4,
 );
